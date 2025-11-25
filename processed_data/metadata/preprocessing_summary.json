@@ -1,0 +1,52 @@
+{
+    "thesis_title": "Federated Learning for Fraud Detection in Credit Card Transaction using Edge Computing for Privacy-Preserving AI",
+    "preprocessing_date": "2025-11-19 14:49:35",
+    "dataset": {
+        "source": "Credit Card Fraud Detection (Kaggle)",
+        "total_transactions": 50000,
+        "original_fraud_rate": "0.1720%"
+    },
+    "preprocessing_steps": [
+        "1. Data loading and exploration",
+        "2. Feature scaling (RobustScaler for Amount and Time)",
+        "3. Train-test split (80/20 with stratification)",
+        "4. Class balancing (SMOTE, ADASYN, RandomUnderSampling)",
+        "5. Federated data simulation (5 edge nodes)"
+    ],
+    "balancing_techniques": {
+        "smote": "Synthetic Minority Over-sampling Technique",
+        "adasyn": "Adaptive Synthetic Sampling",
+        "undersampling": "Random Under-sampling"
+    },
+    "federated_learning": {
+        "num_clients": 5,
+        "purpose": "Simulate banks/merchants as edge computing nodes",
+        "data_distribution": "Stratified across clients"
+    },
+    "output_structure": {
+        "processed_data/": {
+            "smote/": "SMOTE balanced data",
+            "adasyn/": "ADASYN balanced data",
+            "undersampling/": "Under-sampled data",
+            "federated_data/": "Client-specific data for federated learning",
+            "visualizations/": "All exploratory and comparison plots",
+            "metadata/": "JSON reports and statistics"
+        }
+    },
+    "next_steps": [
+        "1. Implement federated learning architecture",
+        "2. Design edge computing deployment strategy",
+        "3. Train local models on each client",
+        "4. Implement secure aggregation mechanism",
+        "5. Evaluate privacy-preserving performance",
+        "6. Compare with centralized baseline",
+        "7. Analyze communication efficiency",
+        "8. Document findings for thesis"
+    ],
+    "security_compliance": {
+        "no_external_connections": true,
+        "local_processing_only": true,
+        "company_laptop_safe": true,
+        "data_privacy_maintained": true
+    }
+}

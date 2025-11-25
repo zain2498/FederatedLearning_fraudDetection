@@ -1,0 +1,14 @@
+{
+    "method": "SMOTE",
+    "train_samples": 79862,
+    "test_samples": 10000,
+    "train_distribution": {
+        "0": 39931,
+        "1": 39931
+    },
+    "test_distribution": {
+        "0": 9983,
+        "1": 17
+    },
+    "timestamp": "2025-11-19 14:49:27"
+}

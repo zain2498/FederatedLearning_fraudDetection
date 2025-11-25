@@ -1,0 +1,32 @@
+{
+    "dataset_info": {
+        "total_transactions": 50000,
+        "num_features": 31,
+        "memory_mb": 11.825687408447266
+    },
+    "class_distribution": {
+        "normal_count": 49914,
+        "fraud_count": 86,
+        "fraud_rate_percent": 0.172,
+        "imbalance_ratio": 580.3953488372093
+    },
+    "data_quality": {
+        "missing_values": 0,
+        "duplicate_rows": 0
+    },
+    "feature_statistics": {
+        "time_range_seconds": [
+            0.9566932741194192,
+            172787.1872880084
+        ],
+        "time_range_hours": 47.99644091333567,
+        "amount_range": [
+            0.0133518207137914,
+            3006.057363821128
+        ],
+        "amount_mean": 22.662549103069964,
+        "amount_median": 7.310533251328772,
+        "amount_std": 59.98073831987442
+    },
+    "timestamp": "2025-11-19 14:49:23"
+}

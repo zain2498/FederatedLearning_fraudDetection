@@ -1,0 +1,43 @@
+{
+    "method": "adasyn",
+    "num_clients": 5,
+    "total_samples": 79882,
+    "clients": [
+        {
+            "client_id": 1,
+            "samples": 15976,
+            "normal": 7973,
+            "fraud": 8003,
+            "fraud_rate": 50.09389083625438
+        },
+        {
+            "client_id": 2,
+            "samples": 15976,
+            "normal": 8032,
+            "fraud": 7944,
+            "fraud_rate": 49.72458688032048
+        },
+        {
+            "client_id": 3,
+            "samples": 15976,
+            "normal": 7927,
+            "fraud": 8049,
+            "fraud_rate": 50.381822734101156
+        },
+        {
+            "client_id": 4,
+            "samples": 15976,
+            "normal": 7884,
+            "fraud": 8092,
+            "fraud_rate": 50.65097646469705
+        },
+        {
+            "client_id": 5,
+            "samples": 15978,
+            "normal": 8115,
+            "fraud": 7863,
+            "fraud_rate": 49.2114156965828
+        }
+    ],
+    "timestamp": "2025-11-19 14:49:35"
+}

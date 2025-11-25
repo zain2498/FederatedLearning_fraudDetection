@@ -1,0 +1,43 @@
+{
+    "method": "smote",
+    "num_clients": 5,
+    "total_samples": 79862,
+    "clients": [
+        {
+            "client_id": 1,
+            "samples": 15972,
+            "normal": 7999,
+            "fraud": 7973,
+            "fraud_rate": 49.91860756323566
+        },
+        {
+            "client_id": 2,
+            "samples": 15972,
+            "normal": 7981,
+            "fraud": 7991,
+            "fraud_rate": 50.0313047833709
+        },
+        {
+            "client_id": 3,
+            "samples": 15972,
+            "normal": 7952,
+            "fraud": 8020,
+            "fraud_rate": 50.21287252692211
+        },
+        {
+            "client_id": 4,
+            "samples": 15972,
+            "normal": 7883,
+            "fraud": 8089,
+            "fraud_rate": 50.64487853744052
+        },
+        {
+            "client_id": 5,
+            "samples": 15974,
+            "normal": 8116,
+            "fraud": 7858,
+            "fraud_rate": 49.19243771128083
+        }
+    ],
+    "timestamp": "2025-11-19 14:49:33"
+}

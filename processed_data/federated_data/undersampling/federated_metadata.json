@@ -1,0 +1,43 @@
+{
+    "method": "undersampling",
+    "num_clients": 5,
+    "total_samples": 138,
+    "clients": [
+        {
+            "client_id": 1,
+            "samples": 27,
+            "normal": 15,
+            "fraud": 12,
+            "fraud_rate": 44.44444444444444
+        },
+        {
+            "client_id": 2,
+            "samples": 27,
+            "normal": 14,
+            "fraud": 13,
+            "fraud_rate": 48.148148148148145
+        },
+        {
+            "client_id": 3,
+            "samples": 27,
+            "normal": 15,
+            "fraud": 12,
+            "fraud_rate": 44.44444444444444
+        },
+        {
+            "client_id": 4,
+            "samples": 27,
+            "normal": 12,
+            "fraud": 15,
+            "fraud_rate": 55.55555555555556
+        },
+        {
+            "client_id": 5,
+            "samples": 30,
+            "normal": 13,
+            "fraud": 17,
+            "fraud_rate": 56.666666666666664
+        }
+    ],
+    "timestamp": "2025-11-19 14:49:35"
+}

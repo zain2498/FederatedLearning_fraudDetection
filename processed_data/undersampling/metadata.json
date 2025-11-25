@@ -1,0 +1,14 @@
+{
+    "method": "RandomUnderSampler",
+    "train_samples": 138,
+    "test_samples": 10000,
+    "train_distribution": {
+        "0": 69,
+        "1": 69
+    },
+    "test_distribution": {
+        "0": 9983,
+        "1": 17
+    },
+    "timestamp": "2025-11-19 14:49:30"
+}

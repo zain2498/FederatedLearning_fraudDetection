@@ -1,0 +1,426 @@
+2025-11-19 14:39:08,312 - INFO - Performing security checks...
+2025-11-19 14:39:08,361 - INFO - Security checks completed successfully
+2025-11-19 14:39:08,365 - INFO - Created directory structure in: D:\PracticeProject\fraud_detection_project\processed_data
+2025-11-19 14:39:08,367 - INFO - ================================================================================
+2025-11-19 14:39:08,367 - INFO - Credit Card Fraud Detection Preprocessor Initialized
+2025-11-19 14:39:08,368 - INFO - Thesis: Federated Learning for Privacy-Preserving Fraud Detection
+2025-11-19 14:39:08,368 - INFO - Date: 2025-11-19 14:39:08
+2025-11-19 14:39:08,368 - INFO - ================================================================================
+2025-11-19 14:39:08,368 - INFO - 
+================================================================================
+2025-11-19 14:39:08,369 - INFO - STEP 1: Loading and Exploring Dataset
+2025-11-19 14:39:08,369 - INFO - ================================================================================
+2025-11-19 14:39:08,369 - INFO - Loading data from: D:\PracticeProject\fraud_detection_project\creditcard.csv
+2025-11-19 14:39:08,393 - ERROR - Preprocessing failed: 'utf-8' codec can't decode byte 0xa4 in position 14: invalid start byte
+Traceback (most recent call last):
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 792, in main
+    preprocessor.load_and_explore()
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 141, in load_and_explore
+    self.df = pd.read_csv(self.data_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 574, in pandas._libs.parsers.TextReader.__cinit__
+  File "parsers.pyx", line 663, in pandas._libs.parsers.TextReader._get_header
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2053, in pandas._libs.parsers.raise_parser_error
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa4 in position 14: invalid start byte
+2025-11-19 14:42:53,004 - INFO - Performing security checks...
+2025-11-19 14:42:53,010 - INFO - [OK] No external API calls configured
+2025-11-19 14:42:53,010 - INFO - [OK] All data processing is local
+2025-11-19 14:42:53,010 - INFO - [OK] Using only standard ML libraries
+2025-11-19 14:42:53,010 - INFO - Security checks completed successfully
+2025-11-19 14:42:53,012 - INFO - Created directory structure in: D:\PracticeProject\fraud_detection_project\processed_data
+2025-11-19 14:42:53,012 - INFO - ================================================================================
+2025-11-19 14:42:53,012 - INFO - Credit Card Fraud Detection Preprocessor Initialized
+2025-11-19 14:42:53,012 - INFO - Thesis: Federated Learning for Privacy-Preserving Fraud Detection
+2025-11-19 14:42:53,013 - INFO - Date: 2025-11-19 14:42:53
+2025-11-19 14:42:53,013 - INFO - ================================================================================
+2025-11-19 14:42:53,013 - INFO - 
+================================================================================
+2025-11-19 14:42:53,015 - INFO - STEP 1: Loading and Exploring Dataset
+2025-11-19 14:42:53,015 - INFO - ================================================================================
+2025-11-19 14:42:53,015 - INFO - Loading data from: D:\PracticeProject\fraud_detection_project\creditcard.csv
+2025-11-19 14:42:53,015 - INFO - Trying encoding: utf-8
+2025-11-19 14:42:53,017 - ERROR - [ERROR] Error during data loading: Error tokenizing data. C error: Expected 1 fields in line 8, saw 3
+
+2025-11-19 14:42:53,017 - ERROR - Preprocessing failed: Error tokenizing data. C error: Expected 1 fields in line 8, saw 3
+Traceback (most recent call last):
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 809, in main
+    preprocessor.load_and_explore()
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 149, in load_and_explore
+    self.df = pd.read_csv(self.data_path, encoding=encoding)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 8, saw 3
+
+2025-11-19 14:46:21,574 - INFO - Performing security checks...
+2025-11-19 14:46:21,579 - INFO - [OK] No external API calls configured
+2025-11-19 14:46:21,579 - INFO - [OK] All data processing is local
+2025-11-19 14:46:21,579 - INFO - [OK] Using only standard ML libraries
+2025-11-19 14:46:21,579 - INFO - Security checks completed successfully
+2025-11-19 14:46:21,580 - INFO - Created directory structure in: D:\PracticeProject\fraud_detection_project\processed_data
+2025-11-19 14:46:21,580 - INFO - ================================================================================
+2025-11-19 14:46:21,580 - INFO - Credit Card Fraud Detection Preprocessor Initialized
+2025-11-19 14:46:21,580 - INFO - Thesis: Federated Learning for Privacy-Preserving Fraud Detection
+2025-11-19 14:46:21,580 - INFO - Date: 2025-11-19 14:46:21
+2025-11-19 14:46:21,580 - INFO - ================================================================================
+2025-11-19 14:46:21,580 - INFO - 
+================================================================================
+2025-11-19 14:46:21,580 - INFO - STEP 1: Loading and Exploring Dataset
+2025-11-19 14:46:21,580 - INFO - ================================================================================
+2025-11-19 14:46:21,580 - INFO - Loading data from: D:\PracticeProject\fraud_detection_project\creditcard.csv
+2025-11-19 14:46:21,584 - INFO - Trying encoding: utf-8
+2025-11-19 14:46:22,185 - INFO - [OK] Successfully loaded with utf-8 encoding
+2025-11-19 14:46:22,185 - INFO - [OK] Data loaded successfully: 50000 rows, 31 columns
+2025-11-19 14:46:22,185 - INFO - 
+--- Dataset Overview ---
+2025-11-19 14:46:22,185 - INFO - Total transactions: 50,000
+2025-11-19 14:46:22,185 - INFO - Number of features: 31
+2025-11-19 14:46:22,185 - INFO - Memory usage: 11.83 MB
+2025-11-19 14:46:22,185 - INFO - 
+--- Class Distribution ---
+2025-11-19 14:46:22,185 - INFO - Normal transactions (Class 0): 49,914 (99.83%)
+2025-11-19 14:46:22,185 - INFO - Fraudulent transactions (Class 1): 86 (0.1720%)
+2025-11-19 14:46:22,185 - INFO - Imbalance ratio: 1:580
+2025-11-19 14:46:22,196 - INFO - 
+--- Data Quality Check ---
+2025-11-19 14:46:22,199 - INFO - Missing values: 0
+2025-11-19 14:46:22,265 - INFO - Duplicate rows: 0
+2025-11-19 14:46:22,266 - INFO - 
+--- Feature Statistics ---
+2025-11-19 14:46:22,267 - INFO - Time range: 1s to 172787s (48.0 hours)
+2025-11-19 14:46:22,267 - INFO - Amount range: $0.01 to $3006.06
+2025-11-19 14:46:22,268 - INFO - Amount mean: $22.66
+2025-11-19 14:46:22,270 - INFO - Amount median: $7.31
+2025-11-19 14:46:22,270 - INFO - PCA components (V1-V28): 28 features (already transformed)
+2025-11-19 14:46:22,270 - INFO - 
+--- Creating Visualizations ---
+2025-11-19 14:46:24,236 - INFO - [OK] Saved: 01_class_distribution.png
+2025-11-19 14:46:24,423 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-19 14:46:24,453 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-19 14:46:24,824 - INFO - [OK] Saved: 02_amount_analysis.png
+2025-11-19 14:46:25,323 - INFO - [OK] Saved: 03_correlation_heatmap.png
+2025-11-19 14:46:25,324 - INFO - All visualizations saved to: D:\PracticeProject\fraud_detection_project\processed_data\visualizations
+2025-11-19 14:46:25,388 - INFO - [OK] Exploration report saved: D:\PracticeProject\fraud_detection_project\processed_data\metadata\exploration_report.json
+2025-11-19 14:46:25,388 - INFO - 
+[OK] Data exploration completed successfully
+2025-11-19 14:46:25,388 - INFO - 
+================================================================================
+2025-11-19 14:46:25,398 - INFO - STEP 2: Feature Scaling
+2025-11-19 14:46:25,398 - INFO - ================================================================================
+2025-11-19 14:46:25,398 - INFO - Scaling strategy:
+2025-11-19 14:46:25,398 - INFO -   - Amount: RobustScaler (robust to outliers)
+2025-11-19 14:46:25,398 - INFO -   - Time: RobustScaler (handles time variance)
+2025-11-19 14:46:25,398 - INFO -   - V1-V28: Already PCA-transformed, no scaling needed
+2025-11-19 14:46:25,409 - INFO - [OK] Scaled features: ['Amount', 'Time']
+2025-11-19 14:46:25,410 - INFO -   Amount - Mean: 0.8762, Std: 3.4231
+2025-11-19 14:46:25,410 - INFO -   Time - Mean: -0.0001, Std: 0.5775
+2025-11-19 14:46:25,410 - INFO - [OK] Feature scaling completed successfully
+2025-11-19 14:46:25,410 - INFO - 
+================================================================================
+2025-11-19 14:46:25,410 - INFO - STEP 3: Train-Test Split
+2025-11-19 14:46:25,410 - INFO - ================================================================================
+2025-11-19 14:46:25,410 - INFO - Split ratio: 80% train, 20% test
+2025-11-19 14:46:25,410 - INFO - Using stratification to maintain class distribution
+2025-11-19 14:46:25,434 - INFO - 
+Training set:
+2025-11-19 14:46:25,434 - INFO -   Total samples: 40,000
+2025-11-19 14:46:25,435 - INFO -   Normal: 39,931
+2025-11-19 14:46:25,437 - INFO -   Fraud: 69
+2025-11-19 14:46:25,437 - INFO -   Fraud rate: 0.1725%
+2025-11-19 14:46:25,438 - INFO - 
+Test set:
+2025-11-19 14:46:25,438 - INFO -   Total samples: 10,000
+2025-11-19 14:46:25,438 - INFO -   Normal: 9,983
+2025-11-19 14:46:25,438 - INFO -   Fraud: 17
+2025-11-19 14:46:25,438 - INFO -   Fraud rate: 0.1700%
+2025-11-19 14:46:25,438 - INFO - 
+[OK] Data split completed successfully
+2025-11-19 14:46:25,438 - INFO - 
+================================================================================
+2025-11-19 14:46:25,438 - INFO - STEP 4: Applying Balancing Techniques
+2025-11-19 14:46:25,438 - INFO - ================================================================================
+2025-11-19 14:46:25,442 - INFO - 
+--- Original Training Data ---
+2025-11-19 14:46:25,444 - INFO - Class distribution: Counter({0: 39931, 1: 69})
+2025-11-19 14:46:25,444 - INFO - 
+--- Technique 1: SMOTE ---
+2025-11-19 14:46:25,444 - INFO - Generating synthetic fraud samples using SMOTE
+2025-11-19 14:46:27,869 - INFO - [OK] SMOTE completed
+2025-11-19 14:46:27,869 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:46:27,876 - INFO -   After: Counter({0: 39931, 1: 39931})
+2025-11-19 14:46:27,876 - INFO -   New samples: 39,862
+2025-11-19 14:46:27,882 - INFO - 
+--- Technique 2: ADASYN ---
+2025-11-19 14:46:27,882 - INFO - Generating synthetic samples using adaptive approach
+2025-11-19 14:46:27,952 - INFO - [OK] ADASYN completed
+2025-11-19 14:46:27,957 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:46:27,962 - INFO -   After: Counter({1: 39951, 0: 39931})
+2025-11-19 14:46:27,962 - INFO -   New samples: 39,882
+2025-11-19 14:46:27,967 - INFO - 
+--- Technique 3: Random Under-sampling ---
+2025-11-19 14:46:27,967 - INFO - Reducing majority class samples
+2025-11-19 14:46:27,975 - INFO - [OK] Random Under-sampling completed
+2025-11-19 14:46:27,978 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:46:27,979 - INFO -   After: Counter({0: 69, 1: 69})
+2025-11-19 14:46:27,979 - INFO -   Samples removed: 39,862
+2025-11-19 14:46:27,979 - INFO - 
+--- Saving Balanced Datasets ---
+2025-11-19 14:46:30,142 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\smote\train_smote.csv (79,862 samples)
+2025-11-19 14:46:30,764 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\smote\test_smote.csv (10,000 samples)
+2025-11-19 14:46:32,894 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\adasyn\train_adasyn.csv (79,882 samples)
+2025-11-19 14:46:33,524 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\adasyn\test_adasyn.csv (10,000 samples)
+2025-11-19 14:46:33,542 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\undersampling\train_undersampling.csv (138 samples)
+2025-11-19 14:46:33,766 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\undersampling\test_undersampling.csv (10,000 samples)
+2025-11-19 14:46:33,766 - INFO - 
+--- Creating Balancing Comparison Visualization ---
+2025-11-19 14:46:34,385 - INFO - 
+[OK] All balancing techniques applied successfully
+2025-11-19 14:46:34,385 - INFO - 
+================================================================================
+2025-11-19 14:46:34,385 - INFO - STEP 5: Simulating Federated Learning Data Distribution
+2025-11-19 14:46:34,385 - INFO - ================================================================================
+2025-11-19 14:46:34,385 - INFO - Simulating 5 edge nodes (banks/merchants)
+2025-11-19 14:46:34,385 - INFO - Each client receives stratified data partition
+2025-11-19 14:46:34,385 - INFO - 
+--- Processing SMOTE ---
+2025-11-19 14:46:34,385 - INFO - Total training samples: 79,862
+2025-11-19 14:46:34,385 - INFO - Samples per client: ~15,972
+2025-11-19 14:46:34,397 - ERROR - Preprocessing failed: "None of [Index([60939, 16678, 31487, 37560, 22731, 13080, 35226, 78692, 48102, 72772,\n       ...\n       57974, 47921, 71744, 21267, 66379, 66284, 52565,  9517,  8289, 63663],\n      dtype='int32', length=15972)] are in the [columns]"
+Traceback (most recent call last):
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 821, in main
+    preprocessor.simulate_federated_data(balancing_results, num_clients=NUM_CLIENTS)
+  File "D:\PracticeProject\fraud_detection_project\credit_card_preprocessor.py", line 598, in simulate_federated_data
+    X_client = X_train[client_indices]
+               ~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\PracticeProject\fraud_detection_project\fraud_env\Lib\site-packages\pandas\core\indexes\base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index([60939, 16678, 31487, 37560, 22731, 13080, 35226, 78692, 48102, 72772,\n       ...\n       57974, 47921, 71744, 21267, 66379, 66284, 52565,  9517,  8289, 63663],\n      dtype='int32', length=15972)] are in the [columns]"
+2025-11-19 14:49:20,562 - INFO - Performing security checks...
+2025-11-19 14:49:20,562 - INFO - [OK] No external API calls configured
+2025-11-19 14:49:20,562 - INFO - [OK] All data processing is local
+2025-11-19 14:49:20,562 - INFO - [OK] Using only standard ML libraries
+2025-11-19 14:49:20,562 - INFO - Security checks completed successfully
+2025-11-19 14:49:20,566 - INFO - Created directory structure in: D:\PracticeProject\fraud_detection_project\processed_data
+2025-11-19 14:49:20,566 - INFO - ================================================================================
+2025-11-19 14:49:20,566 - INFO - Credit Card Fraud Detection Preprocessor Initialized
+2025-11-19 14:49:20,566 - INFO - Thesis: Federated Learning for Privacy-Preserving Fraud Detection
+2025-11-19 14:49:20,566 - INFO - Date: 2025-11-19 14:49:20
+2025-11-19 14:49:20,566 - INFO - ================================================================================
+2025-11-19 14:49:20,566 - INFO - 
+================================================================================
+2025-11-19 14:49:20,566 - INFO - STEP 1: Loading and Exploring Dataset
+2025-11-19 14:49:20,566 - INFO - ================================================================================
+2025-11-19 14:49:20,566 - INFO - Loading data from: D:\PracticeProject\fraud_detection_project\creditcard.csv
+2025-11-19 14:49:20,566 - INFO - Trying encoding: utf-8
+2025-11-19 14:49:20,780 - INFO - [OK] Successfully loaded with utf-8 encoding
+2025-11-19 14:49:20,781 - INFO - [OK] Data loaded successfully: 50000 rows, 31 columns
+2025-11-19 14:49:20,781 - INFO - 
+--- Dataset Overview ---
+2025-11-19 14:49:20,781 - INFO - Total transactions: 50,000
+2025-11-19 14:49:20,782 - INFO - Number of features: 31
+2025-11-19 14:49:20,783 - INFO - Memory usage: 11.83 MB
+2025-11-19 14:49:20,783 - INFO - 
+--- Class Distribution ---
+2025-11-19 14:49:20,783 - INFO - Normal transactions (Class 0): 49,914 (99.83%)
+2025-11-19 14:49:20,783 - INFO - Fraudulent transactions (Class 1): 86 (0.1720%)
+2025-11-19 14:49:20,783 - INFO - Imbalance ratio: 1:580
+2025-11-19 14:49:20,791 - INFO - 
+--- Data Quality Check ---
+2025-11-19 14:49:20,793 - INFO - Missing values: 0
+2025-11-19 14:49:20,854 - INFO - Duplicate rows: 0
+2025-11-19 14:49:20,854 - INFO - 
+--- Feature Statistics ---
+2025-11-19 14:49:20,858 - INFO - Time range: 1s to 172787s (48.0 hours)
+2025-11-19 14:49:20,858 - INFO - Amount range: $0.01 to $3006.06
+2025-11-19 14:49:20,858 - INFO - Amount mean: $22.66
+2025-11-19 14:49:20,861 - INFO - Amount median: $7.31
+2025-11-19 14:49:20,862 - INFO - PCA components (V1-V28): 28 features (already transformed)
+2025-11-19 14:49:20,862 - INFO - 
+--- Creating Visualizations ---
+2025-11-19 14:49:21,985 - INFO - [OK] Saved: 01_class_distribution.png
+2025-11-19 14:49:22,151 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-19 14:49:22,178 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-19 14:49:22,565 - INFO - [OK] Saved: 02_amount_analysis.png
+2025-11-19 14:49:23,083 - INFO - [OK] Saved: 03_correlation_heatmap.png
+2025-11-19 14:49:23,083 - INFO - All visualizations saved to: D:\PracticeProject\fraud_detection_project\processed_data\visualizations
+2025-11-19 14:49:23,153 - INFO - [OK] Exploration report saved: D:\PracticeProject\fraud_detection_project\processed_data\metadata\exploration_report.json
+2025-11-19 14:49:23,153 - INFO - 
+[OK] Data exploration completed successfully
+2025-11-19 14:49:23,153 - INFO - 
+================================================================================
+2025-11-19 14:49:23,163 - INFO - STEP 2: Feature Scaling
+2025-11-19 14:49:23,163 - INFO - ================================================================================
+2025-11-19 14:49:23,163 - INFO - Scaling strategy:
+2025-11-19 14:49:23,163 - INFO -   - Amount: RobustScaler (robust to outliers)
+2025-11-19 14:49:23,163 - INFO -   - Time: RobustScaler (handles time variance)
+2025-11-19 14:49:23,163 - INFO -   - V1-V28: Already PCA-transformed, no scaling needed
+2025-11-19 14:49:23,169 - INFO - [OK] Scaled features: ['Amount', 'Time']
+2025-11-19 14:49:23,169 - INFO -   Amount - Mean: 0.8762, Std: 3.4231
+2025-11-19 14:49:23,169 - INFO -   Time - Mean: -0.0001, Std: 0.5775
+2025-11-19 14:49:23,169 - INFO - [OK] Feature scaling completed successfully
+2025-11-19 14:49:23,174 - INFO - 
+================================================================================
+2025-11-19 14:49:23,174 - INFO - STEP 3: Train-Test Split
+2025-11-19 14:49:23,175 - INFO - ================================================================================
+2025-11-19 14:49:23,175 - INFO - Split ratio: 80% train, 20% test
+2025-11-19 14:49:23,175 - INFO - Using stratification to maintain class distribution
+2025-11-19 14:49:23,199 - INFO - 
+Training set:
+2025-11-19 14:49:23,199 - INFO -   Total samples: 40,000
+2025-11-19 14:49:23,200 - INFO -   Normal: 39,931
+2025-11-19 14:49:23,200 - INFO -   Fraud: 69
+2025-11-19 14:49:23,201 - INFO -   Fraud rate: 0.1725%
+2025-11-19 14:49:23,201 - INFO - 
+Test set:
+2025-11-19 14:49:23,201 - INFO -   Total samples: 10,000
+2025-11-19 14:49:23,202 - INFO -   Normal: 9,983
+2025-11-19 14:49:23,202 - INFO -   Fraud: 17
+2025-11-19 14:49:23,203 - INFO -   Fraud rate: 0.1700%
+2025-11-19 14:49:23,203 - INFO - 
+[OK] Data split completed successfully
+2025-11-19 14:49:23,203 - INFO - 
+================================================================================
+2025-11-19 14:49:23,203 - INFO - STEP 4: Applying Balancing Techniques
+2025-11-19 14:49:23,205 - INFO - ================================================================================
+2025-11-19 14:49:23,205 - INFO - 
+--- Original Training Data ---
+2025-11-19 14:49:23,207 - INFO - Class distribution: Counter({0: 39931, 1: 69})
+2025-11-19 14:49:23,208 - INFO - 
+--- Technique 1: SMOTE ---
+2025-11-19 14:49:23,208 - INFO - Generating synthetic fraud samples using SMOTE
+2025-11-19 14:49:24,672 - INFO - [OK] SMOTE completed
+2025-11-19 14:49:24,678 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:49:24,684 - INFO -   After: Counter({0: 39931, 1: 39931})
+2025-11-19 14:49:24,684 - INFO -   New samples: 39,862
+2025-11-19 14:49:24,688 - INFO - 
+--- Technique 2: ADASYN ---
+2025-11-19 14:49:24,688 - INFO - Generating synthetic samples using adaptive approach
+2025-11-19 14:49:24,751 - INFO - [OK] ADASYN completed
+2025-11-19 14:49:24,758 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:49:24,764 - INFO -   After: Counter({1: 39951, 0: 39931})
+2025-11-19 14:49:24,764 - INFO -   New samples: 39,882
+2025-11-19 14:49:24,770 - INFO - 
+--- Technique 3: Random Under-sampling ---
+2025-11-19 14:49:24,770 - INFO - Reducing majority class samples
+2025-11-19 14:49:24,773 - INFO - [OK] Random Under-sampling completed
+2025-11-19 14:49:24,780 - INFO -   Before: Counter({0: 39931, 1: 69})
+2025-11-19 14:49:24,781 - INFO -   After: Counter({0: 69, 1: 69})
+2025-11-19 14:49:24,782 - INFO -   Samples removed: 39,862
+2025-11-19 14:49:24,782 - INFO - 
+--- Saving Balanced Datasets ---
+2025-11-19 14:49:27,021 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\smote\train_smote.csv (79,862 samples)
+2025-11-19 14:49:27,660 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\smote\test_smote.csv (10,000 samples)
+2025-11-19 14:49:29,912 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\adasyn\train_adasyn.csv (79,882 samples)
+2025-11-19 14:49:30,552 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\adasyn\test_adasyn.csv (10,000 samples)
+2025-11-19 14:49:30,557 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\undersampling\train_undersampling.csv (138 samples)
+2025-11-19 14:49:30,795 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\undersampling\test_undersampling.csv (10,000 samples)
+2025-11-19 14:49:30,795 - INFO - 
+--- Creating Balancing Comparison Visualization ---
+2025-11-19 14:49:31,450 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\visualizations\04_balancing_comparison.png
+2025-11-19 14:49:31,450 - INFO - 
+[OK] All balancing techniques applied successfully
+2025-11-19 14:49:31,450 - INFO - 
+================================================================================
+2025-11-19 14:49:31,450 - INFO - STEP 5: Simulating Federated Learning Data Distribution
+2025-11-19 14:49:31,450 - INFO - ================================================================================
+2025-11-19 14:49:31,450 - INFO - Simulating 5 edge nodes (banks/merchants)
+2025-11-19 14:49:31,450 - INFO - Each client receives stratified data partition
+2025-11-19 14:49:31,450 - INFO - 
+--- Processing SMOTE ---
+2025-11-19 14:49:31,450 - INFO - Total training samples: 79,862
+2025-11-19 14:49:31,450 - INFO - Samples per client: ~15,972
+2025-11-19 14:49:31,915 - INFO -   Client 1: 15,972 samples | Normal: 7,999 | Fraud: 7,973 | Fraud rate: 49.92%
+2025-11-19 14:49:32,288 - INFO -   Client 2: 15,972 samples | Normal: 7,981 | Fraud: 7,991 | Fraud rate: 50.03%
+2025-11-19 14:49:32,660 - INFO -   Client 3: 15,972 samples | Normal: 7,952 | Fraud: 8,020 | Fraud rate: 50.21%
+2025-11-19 14:49:33,045 - INFO -   Client 4: 15,972 samples | Normal: 7,883 | Fraud: 8,089 | Fraud rate: 50.64%
+2025-11-19 14:49:33,427 - INFO -   Client 5: 15,974 samples | Normal: 8,116 | Fraud: 7,858 | Fraud rate: 49.19%
+2025-11-19 14:49:33,427 - INFO - [OK] Saved federated data for smote in: D:\PracticeProject\fraud_detection_project\processed_data\federated_data\smote
+2025-11-19 14:49:33,427 - INFO - 
+--- Processing ADASYN ---
+2025-11-19 14:49:33,427 - INFO - Total training samples: 79,882
+2025-11-19 14:49:33,427 - INFO - Samples per client: ~15,976
+2025-11-19 14:49:33,824 - INFO -   Client 1: 15,976 samples | Normal: 7,973 | Fraud: 8,003 | Fraud rate: 50.09%
+2025-11-19 14:49:34,222 - INFO -   Client 2: 15,976 samples | Normal: 8,032 | Fraud: 7,944 | Fraud rate: 49.72%
+2025-11-19 14:49:34,615 - INFO -   Client 3: 15,976 samples | Normal: 7,927 | Fraud: 8,049 | Fraud rate: 50.38%
+2025-11-19 14:49:34,998 - INFO -   Client 4: 15,976 samples | Normal: 7,884 | Fraud: 8,092 | Fraud rate: 50.65%
+2025-11-19 14:49:35,388 - INFO -   Client 5: 15,978 samples | Normal: 8,115 | Fraud: 7,863 | Fraud rate: 49.21%
+2025-11-19 14:49:35,391 - INFO - [OK] Saved federated data for adasyn in: D:\PracticeProject\fraud_detection_project\processed_data\federated_data\adasyn
+2025-11-19 14:49:35,391 - INFO - 
+--- Processing UNDERSAMPLING ---
+2025-11-19 14:49:35,391 - INFO - Total training samples: 138
+2025-11-19 14:49:35,391 - INFO - Samples per client: ~27
+2025-11-19 14:49:35,398 - INFO -   Client 1: 27 samples | Normal: 15 | Fraud: 12 | Fraud rate: 44.44%
+2025-11-19 14:49:35,400 - INFO -   Client 2: 27 samples | Normal: 14 | Fraud: 13 | Fraud rate: 48.15%
+2025-11-19 14:49:35,404 - INFO -   Client 3: 27 samples | Normal: 15 | Fraud: 12 | Fraud rate: 44.44%
+2025-11-19 14:49:35,406 - INFO -   Client 4: 27 samples | Normal: 12 | Fraud: 15 | Fraud rate: 55.56%
+2025-11-19 14:49:35,412 - INFO -   Client 5: 30 samples | Normal: 13 | Fraud: 17 | Fraud rate: 56.67%
+2025-11-19 14:49:35,413 - INFO - [OK] Saved federated data for undersampling in: D:\PracticeProject\fraud_detection_project\processed_data\federated_data\undersampling
+2025-11-19 14:49:35,414 - INFO - 
+--- Creating Federated Distribution Visualization ---
+2025-11-19 14:49:35,950 - INFO - [OK] Saved: D:\PracticeProject\fraud_detection_project\processed_data\visualizations\05_federated_distribution.png
+2025-11-19 14:49:35,950 - INFO - 
+[OK] Federated data simulation completed successfully
+2025-11-19 14:49:35,950 - INFO - 
+================================================================================
+2025-11-19 14:49:35,950 - INFO - GENERATING PREPROCESSING SUMMARY
+2025-11-19 14:49:35,950 - INFO - ================================================================================
+2025-11-19 14:49:35,950 - INFO - 
+[OK] Summary saved: D:\PracticeProject\fraud_detection_project\processed_data\metadata\preprocessing_summary.json
+2025-11-19 14:49:35,950 - INFO - 
+================================================================================
+2025-11-19 14:49:35,950 - INFO - PREPROCESSING COMPLETED SUCCESSFULLY
+2025-11-19 14:49:35,950 - INFO - ================================================================================
+2025-11-19 14:49:35,970 - INFO -   [OK] Data ready for federated learning implementation
+2025-11-19 14:49:35,970 - INFO -   [OK] Edge computing simulation prepared
+2025-11-19 14:49:35,970 - INFO -   [OK] Privacy-preserving setup validated
+2025-11-19 14:49:35,971 - INFO -   [OK] Multiple balancing techniques for comparison
+2025-11-19 14:49:35,971 - INFO -   [OK] All processing done locally
+2025-11-19 14:49:35,971 - INFO -   [OK] No external API calls
+2025-11-19 14:49:35,971 - INFO -   [OK] Company laptop compliant
+2025-11-19 14:49:35,971 - INFO -   1. Implement federated learning model architecture
+2025-11-19 14:49:35,971 - INFO -   2. Design secure aggregation protocol
+2025-11-19 14:49:35,971 - INFO -   3. Train and evaluate on each balancing method
+2025-11-19 14:49:35,971 - INFO -   4. Compare federated vs centralized approaches
+2025-11-19 14:49:35,971 - INFO -   5. Analyze privacy-utility trade-offs
+2025-11-19 14:49:35,971 - INFO - 
+================================================================================
+2025-11-19 14:49:35,971 - INFO - All preprocessing tasks completed! Ready for model development.
+2025-11-19 14:49:35,977 - INFO - ================================================================================
