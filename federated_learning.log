@@ -1057,3 +1057,1062 @@
 2025-12-04 12:17:13,654 - INFO - Saved pure_fl model to d:/PracticeProject/fraud_detection_project\trained_models\pure_fl_model.pkl
 2025-12-04 12:17:13,663 - INFO - Saved hierarchical_fl model to d:/PracticeProject/fraud_detection_project\trained_models\hierarchical_fl_model.pkl
 2025-12-04 12:17:13,669 - INFO - Experiment completed successfully! Results saved to d:/PracticeProject/fraud_detection_project\experiment_results_adasyn_mlp.json
+2025-12-06 17:30:20,544 - INFO - Hierarchical Federated Learning system initialized
+2025-12-06 17:30:20,545 - INFO - Project path: d:/PracticeProject/fraud_detection_project
+2025-12-06 17:30:20,545 - INFO - Edge configuration: {'edge_1': [1, 2, 3], 'edge_2': [4, 5]}
+2025-12-06 17:30:20,545 - INFO - Starting complete FL experiment with smote data and mlp model
+2025-12-06 17:30:20,545 - INFO - Loading data with balance method: smote
+2025-12-06 17:30:20,619 - INFO - Merchant 1: 12777 train, 3195 test samples
+2025-12-06 17:30:20,619 - INFO -   Fraud rate: 49.92%
+2025-12-06 17:30:20,688 - INFO - Merchant 2: 12777 train, 3195 test samples
+2025-12-06 17:30:20,688 - INFO -   Fraud rate: 50.03%
+2025-12-06 17:30:20,758 - INFO - Merchant 3: 12777 train, 3195 test samples
+2025-12-06 17:30:20,758 - INFO -   Fraud rate: 50.21%
+2025-12-06 17:30:20,825 - INFO - Merchant 4: 12777 train, 3195 test samples
+2025-12-06 17:30:20,828 - INFO -   Fraud rate: 50.64%
+2025-12-06 17:30:20,893 - INFO - Merchant 5: 12779 train, 3195 test samples
+2025-12-06 17:30:20,893 - INFO -   Fraud rate: 49.19%
+2025-12-06 17:30:20,893 - INFO - Successfully loaded data for 5 merchants
+2025-12-06 17:30:20,893 - INFO - Training centralized baseline...
+2025-12-06 17:30:20,893 - INFO - Training centralized baseline model...
+2025-12-06 17:30:32,651 - INFO - Centralized Baseline Evaluation:
+2025-12-06 17:30:32,651 - INFO -   Accuracy: 0.9988
+2025-12-06 17:30:32,662 - INFO -   Precision: 0.9976
+2025-12-06 17:30:32,662 - INFO -   Recall: 1.0000
+2025-12-06 17:30:32,662 - INFO -   F1-Score: 0.9988
+2025-12-06 17:30:32,662 - INFO -   ROC-AUC: 0.9999
+2025-12-06 17:30:32,665 - INFO - Training pure federated learning...
+2025-12-06 17:30:32,665 - INFO - Training pure federated learning model...
+2025-12-06 17:30:32,692 - INFO - Pure FL Round 1/10
+2025-12-06 17:30:36,742 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:30:40,502 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:30:44,643 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:30:48,797 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:30:53,603 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:30:53,646 - INFO - Pure FL Round 1 Evaluation:
+2025-12-06 17:30:53,646 - INFO -   Accuracy: 0.5656
+2025-12-06 17:30:53,646 - INFO -   Precision: 0.5383
+2025-12-06 17:30:53,646 - INFO -   Recall: 0.9221
+2025-12-06 17:30:53,646 - INFO -   F1-Score: 0.6798
+2025-12-06 17:30:53,646 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:30:53,646 - INFO - Pure FL Round 2/10
+2025-12-06 17:30:57,917 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:31:01,639 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:31:04,875 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:31:08,206 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:31:11,871 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:31:11,913 - INFO - Pure FL Round 2 Evaluation:
+2025-12-06 17:31:11,913 - INFO -   Accuracy: 0.5656
+2025-12-06 17:31:11,913 - INFO -   Precision: 0.5383
+2025-12-06 17:31:11,913 - INFO -   Recall: 0.9221
+2025-12-06 17:31:11,913 - INFO -   F1-Score: 0.6798
+2025-12-06 17:31:11,913 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:31:11,913 - INFO - Pure FL Round 3/10
+2025-12-06 17:31:15,467 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:31:19,092 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:31:22,477 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:31:25,999 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:31:29,248 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:31:29,293 - INFO - Pure FL Round 3 Evaluation:
+2025-12-06 17:31:29,293 - INFO -   Accuracy: 0.5656
+2025-12-06 17:31:29,293 - INFO -   Precision: 0.5383
+2025-12-06 17:31:29,293 - INFO -   Recall: 0.9221
+2025-12-06 17:31:29,293 - INFO -   F1-Score: 0.6798
+2025-12-06 17:31:29,293 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:31:29,293 - INFO - Pure FL Round 4/10
+2025-12-06 17:31:34,098 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:31:37,845 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:31:42,246 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:31:45,466 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:31:48,927 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:31:48,976 - INFO - Pure FL Round 4 Evaluation:
+2025-12-06 17:31:48,976 - INFO -   Accuracy: 0.5656
+2025-12-06 17:31:48,976 - INFO -   Precision: 0.5383
+2025-12-06 17:31:48,976 - INFO -   Recall: 0.9221
+2025-12-06 17:31:48,976 - INFO -   F1-Score: 0.6798
+2025-12-06 17:31:48,976 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:31:48,976 - INFO - Pure FL Round 5/10
+2025-12-06 17:31:53,190 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:31:57,441 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:32:00,911 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:32:05,036 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:32:08,717 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:32:08,764 - INFO - Pure FL Round 5 Evaluation:
+2025-12-06 17:32:08,764 - INFO -   Accuracy: 0.5656
+2025-12-06 17:32:08,764 - INFO -   Precision: 0.5383
+2025-12-06 17:32:08,764 - INFO -   Recall: 0.9221
+2025-12-06 17:32:08,764 - INFO -   F1-Score: 0.6798
+2025-12-06 17:32:08,764 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:32:08,764 - INFO - Pure FL Round 6/10
+2025-12-06 17:32:12,709 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:32:16,035 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:32:19,231 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:32:22,879 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:32:26,208 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:32:26,256 - INFO - Pure FL Round 6 Evaluation:
+2025-12-06 17:32:26,256 - INFO -   Accuracy: 0.5656
+2025-12-06 17:32:26,256 - INFO -   Precision: 0.5383
+2025-12-06 17:32:26,256 - INFO -   Recall: 0.9221
+2025-12-06 17:32:26,256 - INFO -   F1-Score: 0.6798
+2025-12-06 17:32:26,256 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:32:26,256 - INFO - Pure FL Round 7/10
+2025-12-06 17:32:31,032 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:32:34,918 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:32:38,793 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:32:42,451 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:32:46,058 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:32:46,089 - INFO - Pure FL Round 7 Evaluation:
+2025-12-06 17:32:46,089 - INFO -   Accuracy: 0.5656
+2025-12-06 17:32:46,089 - INFO -   Precision: 0.5383
+2025-12-06 17:32:46,089 - INFO -   Recall: 0.9221
+2025-12-06 17:32:46,089 - INFO -   F1-Score: 0.6798
+2025-12-06 17:32:46,089 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:32:46,089 - INFO - Pure FL Round 8/10
+2025-12-06 17:32:49,839 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:32:53,460 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:32:57,851 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:33:01,158 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:33:04,543 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:33:04,583 - INFO - Pure FL Round 8 Evaluation:
+2025-12-06 17:33:04,583 - INFO -   Accuracy: 0.5656
+2025-12-06 17:33:04,583 - INFO -   Precision: 0.5383
+2025-12-06 17:33:04,583 - INFO -   Recall: 0.9221
+2025-12-06 17:33:04,583 - INFO -   F1-Score: 0.6798
+2025-12-06 17:33:04,583 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:33:04,583 - INFO - Pure FL Round 9/10
+2025-12-06 17:33:07,953 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:33:10,992 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:33:14,182 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:33:17,760 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:33:21,279 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:33:21,324 - INFO - Pure FL Round 9 Evaluation:
+2025-12-06 17:33:21,324 - INFO -   Accuracy: 0.5656
+2025-12-06 17:33:21,324 - INFO -   Precision: 0.5383
+2025-12-06 17:33:21,324 - INFO -   Recall: 0.9221
+2025-12-06 17:33:21,324 - INFO -   F1-Score: 0.6798
+2025-12-06 17:33:21,324 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:33:21,328 - INFO - Pure FL Round 10/10
+2025-12-06 17:33:25,284 - INFO -   merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:33:29,274 - INFO -   merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:33:32,987 - INFO -   merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:33:36,662 - INFO -   merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:33:40,878 - INFO -   merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:33:40,920 - INFO - Pure FL Round 10 Evaluation:
+2025-12-06 17:33:40,920 - INFO -   Accuracy: 0.5656
+2025-12-06 17:33:40,920 - INFO -   Precision: 0.5383
+2025-12-06 17:33:40,920 - INFO -   Recall: 0.9221
+2025-12-06 17:33:40,920 - INFO -   F1-Score: 0.6798
+2025-12-06 17:33:40,920 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:33:40,920 - INFO - Training hierarchical federated learning...
+2025-12-06 17:33:40,920 - INFO - Training hierarchical federated learning model...
+2025-12-06 17:33:40,954 - INFO - Hierarchical FL Round 1/10
+2025-12-06 17:33:40,954 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:33:45,304 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:33:48,896 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:33:53,996 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:33:53,996 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:33:53,996 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:33:53,996 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:33:59,896 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:34:05,275 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:34:05,275 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:34:05,275 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:34:05,275 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:34:05,275 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:34:05,318 - INFO - Hierarchical FL Round 1 Evaluation:
+2025-12-06 17:34:05,322 - INFO -   Accuracy: 0.5656
+2025-12-06 17:34:05,322 - INFO -   Precision: 0.5383
+2025-12-06 17:34:05,322 - INFO -   Recall: 0.9221
+2025-12-06 17:34:05,323 - INFO -   F1-Score: 0.6798
+2025-12-06 17:34:05,323 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:34:05,323 - INFO - Hierarchical FL Round 2/10
+2025-12-06 17:34:05,323 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:34:10,738 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:34:16,209 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:34:22,986 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:34:22,987 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:34:22,987 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:34:22,987 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:34:30,811 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:34:37,347 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:34:37,347 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:34:37,347 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:34:37,350 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:34:37,350 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:34:37,418 - INFO - Hierarchical FL Round 2 Evaluation:
+2025-12-06 17:34:37,418 - INFO -   Accuracy: 0.5656
+2025-12-06 17:34:37,418 - INFO -   Precision: 0.5383
+2025-12-06 17:34:37,418 - INFO -   Recall: 0.9221
+2025-12-06 17:34:37,420 - INFO -   F1-Score: 0.6798
+2025-12-06 17:34:37,420 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:34:37,420 - INFO - Hierarchical FL Round 3/10
+2025-12-06 17:34:37,420 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:34:44,969 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:34:51,925 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:34:59,270 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:34:59,270 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:34:59,272 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:34:59,272 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:35:06,238 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:35:13,854 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:35:13,854 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:35:13,854 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:35:13,854 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:35:13,854 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:35:13,962 - INFO - Hierarchical FL Round 3 Evaluation:
+2025-12-06 17:35:13,962 - INFO -   Accuracy: 0.5656
+2025-12-06 17:35:13,962 - INFO -   Precision: 0.5383
+2025-12-06 17:35:13,962 - INFO -   Recall: 0.9221
+2025-12-06 17:35:13,962 - INFO -   F1-Score: 0.6798
+2025-12-06 17:35:13,962 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:35:13,962 - INFO - Hierarchical FL Round 4/10
+2025-12-06 17:35:13,962 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:35:21,881 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:35:26,834 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:35:31,615 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:35:31,616 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:35:31,616 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:35:31,616 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:35:35,799 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:35:39,966 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:35:39,966 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:35:39,969 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:35:39,969 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:35:39,969 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:35:40,008 - INFO - Hierarchical FL Round 4 Evaluation:
+2025-12-06 17:35:40,008 - INFO -   Accuracy: 0.5656
+2025-12-06 17:35:40,008 - INFO -   Precision: 0.5383
+2025-12-06 17:35:40,008 - INFO -   Recall: 0.9221
+2025-12-06 17:35:40,008 - INFO -   F1-Score: 0.6798
+2025-12-06 17:35:40,008 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:35:40,008 - INFO - Hierarchical FL Round 5/10
+2025-12-06 17:35:40,008 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:35:44,773 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:35:49,613 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:35:55,089 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:35:55,091 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:35:55,091 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:35:55,092 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:36:02,026 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:36:06,940 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:36:06,942 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:36:06,942 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:36:06,942 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:36:06,942 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:36:06,986 - INFO - Hierarchical FL Round 5 Evaluation:
+2025-12-06 17:36:06,986 - INFO -   Accuracy: 0.5656
+2025-12-06 17:36:06,986 - INFO -   Precision: 0.5383
+2025-12-06 17:36:06,986 - INFO -   Recall: 0.9221
+2025-12-06 17:36:06,986 - INFO -   F1-Score: 0.6798
+2025-12-06 17:36:06,986 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:36:06,986 - INFO - Hierarchical FL Round 6/10
+2025-12-06 17:36:06,986 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:36:11,495 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:36:15,439 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:36:21,512 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:36:21,518 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:36:21,518 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:36:21,518 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:36:28,826 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:36:33,088 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:36:33,093 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:36:33,093 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:36:33,093 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:36:33,093 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:36:33,127 - INFO - Hierarchical FL Round 6 Evaluation:
+2025-12-06 17:36:33,127 - INFO -   Accuracy: 0.5656
+2025-12-06 17:36:33,127 - INFO -   Precision: 0.5383
+2025-12-06 17:36:33,127 - INFO -   Recall: 0.9221
+2025-12-06 17:36:33,127 - INFO -   F1-Score: 0.6798
+2025-12-06 17:36:33,127 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:36:33,135 - INFO - Hierarchical FL Round 7/10
+2025-12-06 17:36:33,135 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:36:37,346 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:36:41,521 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:36:46,005 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:36:46,005 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:36:46,005 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:36:46,005 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:36:49,986 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:36:54,482 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:36:54,482 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:36:54,482 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:36:54,482 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:36:54,482 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:36:54,528 - INFO - Hierarchical FL Round 7 Evaluation:
+2025-12-06 17:36:54,538 - INFO -   Accuracy: 0.5656
+2025-12-06 17:36:54,538 - INFO -   Precision: 0.5383
+2025-12-06 17:36:54,538 - INFO -   Recall: 0.9221
+2025-12-06 17:36:54,538 - INFO -   F1-Score: 0.6798
+2025-12-06 17:36:54,538 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:36:54,538 - INFO - Hierarchical FL Round 8/10
+2025-12-06 17:36:54,538 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:36:58,409 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:37:01,842 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:37:06,482 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:37:06,482 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:37:06,482 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:37:06,482 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:37:09,952 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:37:13,833 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:37:13,833 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:37:13,833 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:37:13,833 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:37:13,835 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:37:13,875 - INFO - Hierarchical FL Round 8 Evaluation:
+2025-12-06 17:37:13,875 - INFO -   Accuracy: 0.5656
+2025-12-06 17:37:13,875 - INFO -   Precision: 0.5383
+2025-12-06 17:37:13,875 - INFO -   Recall: 0.9221
+2025-12-06 17:37:13,875 - INFO -   F1-Score: 0.6798
+2025-12-06 17:37:13,875 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:37:13,875 - INFO - Hierarchical FL Round 9/10
+2025-12-06 17:37:13,875 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:37:17,372 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:37:20,938 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:37:24,578 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:37:24,584 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:37:24,584 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:37:24,584 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:37:28,119 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:37:32,004 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:37:32,011 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:37:32,011 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:37:32,011 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:37:32,012 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:37:32,051 - INFO - Hierarchical FL Round 9 Evaluation:
+2025-12-06 17:37:32,053 - INFO -   Accuracy: 0.5656
+2025-12-06 17:37:32,053 - INFO -   Precision: 0.5383
+2025-12-06 17:37:32,053 - INFO -   Recall: 0.9221
+2025-12-06 17:37:32,053 - INFO -   F1-Score: 0.6798
+2025-12-06 17:37:32,053 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:37:32,053 - INFO - Hierarchical FL Round 10/10
+2025-12-06 17:37:32,053 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:37:35,791 - INFO -     merchant_1: 12777 samples, loss: 0.0003
+2025-12-06 17:37:39,204 - INFO -     merchant_2: 12777 samples, loss: 0.0003
+2025-12-06 17:37:42,686 - INFO -     merchant_3: 12777 samples, loss: 0.0003
+2025-12-06 17:37:42,686 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:37:42,686 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:37:42,686 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:37:46,506 - INFO -     merchant_4: 12777 samples, loss: 0.0003
+2025-12-06 17:37:50,184 - INFO -     merchant_5: 12779 samples, loss: 0.0003
+2025-12-06 17:37:50,184 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:37:50,184 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:37:50,184 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:37:50,190 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:37:50,229 - INFO - Hierarchical FL Round 10 Evaluation:
+2025-12-06 17:37:50,229 - INFO -   Accuracy: 0.5656
+2025-12-06 17:37:50,229 - INFO -   Precision: 0.5383
+2025-12-06 17:37:50,229 - INFO -   Recall: 0.9221
+2025-12-06 17:37:50,229 - INFO -   F1-Score: 0.6798
+2025-12-06 17:37:50,229 - INFO -   ROC-AUC: 0.6843
+2025-12-06 17:37:50,229 - INFO - Generating performance comparison...
+2025-12-06 17:37:50,268 - INFO - Plotting training curves...
+2025-12-06 17:41:15,253 - INFO - Saving models...
+2025-12-06 17:41:15,259 - INFO - Saved centralized model to d:/PracticeProject/fraud_detection_project\trained_models\centralized_model.pkl
+2025-12-06 17:41:15,267 - INFO - Saved pure_fl model to d:/PracticeProject/fraud_detection_project\trained_models\pure_fl_model.pkl
+2025-12-06 17:41:15,275 - INFO - Saved hierarchical_fl model to d:/PracticeProject/fraud_detection_project\trained_models\hierarchical_fl_model.pkl
+2025-12-06 17:41:15,275 - INFO - Experiment completed successfully! Results saved to d:/PracticeProject/fraud_detection_project\experiment_results_smote_mlp.json
+2025-12-06 17:41:15,282 - INFO - Starting complete FL experiment with smote data and logistic model
+2025-12-06 17:41:15,282 - INFO - Loading data with balance method: smote
+2025-12-06 17:41:15,358 - INFO - Merchant 1: 12777 train, 3195 test samples
+2025-12-06 17:41:15,360 - INFO -   Fraud rate: 49.92%
+2025-12-06 17:41:15,439 - INFO - Merchant 2: 12777 train, 3195 test samples
+2025-12-06 17:41:15,439 - INFO -   Fraud rate: 50.03%
+2025-12-06 17:41:15,516 - INFO - Merchant 3: 12777 train, 3195 test samples
+2025-12-06 17:41:15,516 - INFO -   Fraud rate: 50.21%
+2025-12-06 17:41:15,590 - INFO - Merchant 4: 12777 train, 3195 test samples
+2025-12-06 17:41:15,592 - INFO -   Fraud rate: 50.64%
+2025-12-06 17:41:15,657 - INFO - Merchant 5: 12779 train, 3195 test samples
+2025-12-06 17:41:15,661 - INFO -   Fraud rate: 49.19%
+2025-12-06 17:41:15,661 - INFO - Successfully loaded data for 5 merchants
+2025-12-06 17:41:15,661 - INFO - Training centralized baseline...
+2025-12-06 17:41:15,662 - INFO - Training centralized baseline model...
+2025-12-06 17:41:15,762 - INFO - Centralized Baseline Evaluation:
+2025-12-06 17:41:15,762 - INFO -   Accuracy: 0.8705
+2025-12-06 17:41:15,762 - INFO -   Precision: 0.8623
+2025-12-06 17:41:15,762 - INFO -   Recall: 0.8819
+2025-12-06 17:41:15,762 - INFO -   F1-Score: 0.8720
+2025-12-06 17:41:15,762 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:15,762 - INFO - Training pure federated learning...
+2025-12-06 17:41:15,766 - INFO - Training pure federated learning model...
+2025-12-06 17:41:15,773 - INFO - Pure FL Round 1/10
+2025-12-06 17:41:15,798 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:15,829 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:15,862 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:15,894 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:15,926 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:15,942 - INFO - Pure FL Round 1 Evaluation:
+2025-12-06 17:41:15,954 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:15,954 - INFO -   Precision: 0.8621
+2025-12-06 17:41:15,954 - INFO -   Recall: 0.8823
+2025-12-06 17:41:15,954 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:15,954 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:15,954 - INFO - Pure FL Round 2/10
+2025-12-06 17:41:15,973 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,006 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,039 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,073 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,106 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,125 - INFO - Pure FL Round 2 Evaluation:
+2025-12-06 17:41:16,125 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,125 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,125 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,125 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,125 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,125 - INFO - Pure FL Round 3/10
+2025-12-06 17:41:16,158 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,191 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,220 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,260 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,292 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,338 - INFO - Pure FL Round 3 Evaluation:
+2025-12-06 17:41:16,338 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,339 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,339 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,339 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,339 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,340 - INFO - Pure FL Round 4/10
+2025-12-06 17:41:16,366 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,388 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,411 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,433 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,449 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,464 - INFO - Pure FL Round 4 Evaluation:
+2025-12-06 17:41:16,472 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,472 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,472 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,473 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,473 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,473 - INFO - Pure FL Round 5/10
+2025-12-06 17:41:16,496 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,528 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,559 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,581 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,608 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,640 - INFO - Pure FL Round 5 Evaluation:
+2025-12-06 17:41:16,640 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,640 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,640 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,640 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,640 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,640 - INFO - Pure FL Round 6/10
+2025-12-06 17:41:16,667 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,679 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,705 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,729 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,760 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,788 - INFO - Pure FL Round 6 Evaluation:
+2025-12-06 17:41:16,788 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,788 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,788 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,788 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,788 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,788 - INFO - Pure FL Round 7/10
+2025-12-06 17:41:16,806 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,829 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:16,849 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:16,867 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:16,895 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:16,912 - INFO - Pure FL Round 7 Evaluation:
+2025-12-06 17:41:16,912 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:16,912 - INFO -   Precision: 0.8621
+2025-12-06 17:41:16,912 - INFO -   Recall: 0.8823
+2025-12-06 17:41:16,912 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:16,921 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:16,921 - INFO - Pure FL Round 8/10
+2025-12-06 17:41:16,942 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:16,973 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,007 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,028 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,050 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,073 - INFO - Pure FL Round 8 Evaluation:
+2025-12-06 17:41:17,073 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:17,073 - INFO -   Precision: 0.8621
+2025-12-06 17:41:17,073 - INFO -   Recall: 0.8823
+2025-12-06 17:41:17,073 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:17,073 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,073 - INFO - Pure FL Round 9/10
+2025-12-06 17:41:17,097 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,118 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,142 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,165 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,187 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,212 - INFO - Pure FL Round 9 Evaluation:
+2025-12-06 17:41:17,212 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:17,212 - INFO -   Precision: 0.8621
+2025-12-06 17:41:17,212 - INFO -   Recall: 0.8823
+2025-12-06 17:41:17,212 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:17,212 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,212 - INFO - Pure FL Round 10/10
+2025-12-06 17:41:17,229 - INFO -   merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,253 - INFO -   merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,273 - INFO -   merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,292 - INFO -   merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,307 - INFO -   merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,333 - INFO - Pure FL Round 10 Evaluation:
+2025-12-06 17:41:17,333 - INFO -   Accuracy: 0.8706
+2025-12-06 17:41:17,333 - INFO -   Precision: 0.8621
+2025-12-06 17:41:17,333 - INFO -   Recall: 0.8823
+2025-12-06 17:41:17,333 - INFO -   F1-Score: 0.8721
+2025-12-06 17:41:17,333 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,333 - INFO - Training hierarchical federated learning...
+2025-12-06 17:41:17,333 - INFO - Training hierarchical federated learning model...
+2025-12-06 17:41:17,340 - INFO - Hierarchical FL Round 1/10
+2025-12-06 17:41:17,340 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,353 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,373 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,392 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,392 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,392 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,392 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,406 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,427 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,427 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:17,427 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:17,428 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:17,428 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:17,452 - INFO - Hierarchical FL Round 1 Evaluation:
+2025-12-06 17:41:17,452 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:17,452 - INFO -   Precision: 0.8615
+2025-12-06 17:41:17,452 - INFO -   Recall: 0.8818
+2025-12-06 17:41:17,453 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:17,453 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,453 - INFO - Hierarchical FL Round 2/10
+2025-12-06 17:41:17,455 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,467 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,488 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,506 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,506 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,506 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,506 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,525 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,539 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,543 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:17,543 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:17,543 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:17,543 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:17,568 - INFO - Hierarchical FL Round 2 Evaluation:
+2025-12-06 17:41:17,568 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:17,568 - INFO -   Precision: 0.8615
+2025-12-06 17:41:17,568 - INFO -   Recall: 0.8818
+2025-12-06 17:41:17,568 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:17,568 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,569 - INFO - Hierarchical FL Round 3/10
+2025-12-06 17:41:17,569 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,586 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,604 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,622 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,622 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,622 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,622 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,639 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,654 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,658 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:17,658 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:17,658 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:17,658 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:17,681 - INFO - Hierarchical FL Round 3 Evaluation:
+2025-12-06 17:41:17,681 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:17,681 - INFO -   Precision: 0.8615
+2025-12-06 17:41:17,681 - INFO -   Recall: 0.8818
+2025-12-06 17:41:17,681 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:17,681 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,681 - INFO - Hierarchical FL Round 4/10
+2025-12-06 17:41:17,681 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,699 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,713 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,739 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,739 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,739 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,739 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,758 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,772 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,772 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:17,772 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:17,777 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:17,777 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:17,793 - INFO - Hierarchical FL Round 4 Evaluation:
+2025-12-06 17:41:17,793 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:17,793 - INFO -   Precision: 0.8615
+2025-12-06 17:41:17,793 - INFO -   Recall: 0.8818
+2025-12-06 17:41:17,793 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:17,793 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,793 - INFO - Hierarchical FL Round 5/10
+2025-12-06 17:41:17,793 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,820 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,825 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,853 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,853 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,853 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,853 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,873 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:17,888 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:17,888 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:17,888 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:17,888 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:17,891 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:17,912 - INFO - Hierarchical FL Round 5 Evaluation:
+2025-12-06 17:41:17,912 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:17,912 - INFO -   Precision: 0.8615
+2025-12-06 17:41:17,912 - INFO -   Recall: 0.8818
+2025-12-06 17:41:17,912 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:17,912 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:17,912 - INFO - Hierarchical FL Round 6/10
+2025-12-06 17:41:17,912 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:17,927 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:17,951 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:17,969 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:17,969 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:17,969 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:17,969 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:17,988 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:18,003 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:18,005 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:18,005 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:18,005 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:18,006 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:18,027 - INFO - Hierarchical FL Round 6 Evaluation:
+2025-12-06 17:41:18,030 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:18,030 - INFO -   Precision: 0.8615
+2025-12-06 17:41:18,030 - INFO -   Recall: 0.8818
+2025-12-06 17:41:18,030 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:18,030 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:18,030 - INFO - Hierarchical FL Round 7/10
+2025-12-06 17:41:18,030 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:18,045 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:18,063 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:18,077 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:18,077 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:18,084 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:18,084 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:18,096 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:18,121 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:18,121 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:18,121 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:18,121 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:18,121 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:18,147 - INFO - Hierarchical FL Round 7 Evaluation:
+2025-12-06 17:41:18,149 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:18,149 - INFO -   Precision: 0.8615
+2025-12-06 17:41:18,149 - INFO -   Recall: 0.8818
+2025-12-06 17:41:18,149 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:18,149 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:18,149 - INFO - Hierarchical FL Round 8/10
+2025-12-06 17:41:18,149 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:18,159 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:18,185 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:18,204 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:18,205 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:18,206 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:18,206 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:18,219 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:18,242 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:18,242 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:18,242 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:18,242 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:18,242 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:18,269 - INFO - Hierarchical FL Round 8 Evaluation:
+2025-12-06 17:41:18,277 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:18,277 - INFO -   Precision: 0.8615
+2025-12-06 17:41:18,277 - INFO -   Recall: 0.8818
+2025-12-06 17:41:18,277 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:18,277 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:18,277 - INFO - Hierarchical FL Round 9/10
+2025-12-06 17:41:18,277 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:18,299 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:18,314 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:18,339 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:18,341 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:18,341 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:18,341 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:18,363 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:18,386 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:18,386 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:18,386 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:18,386 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:18,386 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:18,410 - INFO - Hierarchical FL Round 9 Evaluation:
+2025-12-06 17:41:18,410 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:18,410 - INFO -   Precision: 0.8615
+2025-12-06 17:41:18,410 - INFO -   Recall: 0.8818
+2025-12-06 17:41:18,410 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:18,410 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:18,410 - INFO - Hierarchical FL Round 10/10
+2025-12-06 17:41:18,410 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:41:18,430 - INFO -     merchant_1: 12777 samples, loss: 0.2983
+2025-12-06 17:41:18,444 - INFO -     merchant_2: 12777 samples, loss: 0.3044
+2025-12-06 17:41:18,463 - INFO -     merchant_3: 12777 samples, loss: 0.2929
+2025-12-06 17:41:18,463 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:41:18,469 - INFO -     edge_1 aggregated 3 models (38331 total samples)
+2025-12-06 17:41:18,469 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:41:18,485 - INFO -     merchant_4: 12777 samples, loss: 0.2978
+2025-12-06 17:41:18,504 - INFO -     merchant_5: 12779 samples, loss: 0.3006
+2025-12-06 17:41:18,505 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:41:18,505 - INFO -     edge_2 aggregated 2 models (25556 total samples)
+2025-12-06 17:41:18,505 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:41:18,505 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:41:18,525 - INFO - Hierarchical FL Round 10 Evaluation:
+2025-12-06 17:41:18,525 - INFO -   Accuracy: 0.8700
+2025-12-06 17:41:18,525 - INFO -   Precision: 0.8615
+2025-12-06 17:41:18,525 - INFO -   Recall: 0.8818
+2025-12-06 17:41:18,525 - INFO -   F1-Score: 0.8716
+2025-12-06 17:41:18,525 - INFO -   ROC-AUC: 0.9411
+2025-12-06 17:41:18,525 - INFO - Generating performance comparison...
+2025-12-06 17:41:18,539 - INFO - Plotting training curves...
+2025-12-06 17:41:25,424 - INFO - Saving models...
+2025-12-06 17:41:25,432 - INFO - Saved centralized model to d:/PracticeProject/fraud_detection_project\trained_models\centralized_model.pkl
+2025-12-06 17:41:25,435 - INFO - Saved pure_fl model to d:/PracticeProject/fraud_detection_project\trained_models\pure_fl_model.pkl
+2025-12-06 17:41:25,443 - INFO - Saved hierarchical_fl model to d:/PracticeProject/fraud_detection_project\trained_models\hierarchical_fl_model.pkl
+2025-12-06 17:41:25,453 - INFO - Experiment completed successfully! Results saved to d:/PracticeProject/fraud_detection_project\experiment_results_smote_logistic.json
+2025-12-06 17:41:25,456 - INFO - Starting complete FL experiment with adasyn data and mlp model
+2025-12-06 17:41:25,456 - INFO - Loading data with balance method: adasyn
+2025-12-06 17:41:26,047 - INFO - Merchant 1: 12780 train, 3196 test samples
+2025-12-06 17:41:26,047 - INFO -   Fraud rate: 50.09%
+2025-12-06 17:41:26,559 - INFO - Merchant 2: 12780 train, 3196 test samples
+2025-12-06 17:41:26,566 - INFO -   Fraud rate: 49.72%
+2025-12-06 17:41:27,134 - INFO - Merchant 3: 12780 train, 3196 test samples
+2025-12-06 17:41:27,134 - INFO -   Fraud rate: 50.38%
+2025-12-06 17:41:27,689 - INFO - Merchant 4: 12780 train, 3196 test samples
+2025-12-06 17:41:27,689 - INFO -   Fraud rate: 50.65%
+2025-12-06 17:41:28,311 - INFO - Merchant 5: 12782 train, 3196 test samples
+2025-12-06 17:41:28,311 - INFO -   Fraud rate: 49.21%
+2025-12-06 17:41:28,311 - INFO - Successfully loaded data for 5 merchants
+2025-12-06 17:41:28,317 - INFO - Training centralized baseline...
+2025-12-06 17:41:28,317 - INFO - Training centralized baseline model...
+2025-12-06 17:41:44,122 - INFO - Centralized Baseline Evaluation:
+2025-12-06 17:41:44,122 - INFO -   Accuracy: 0.9992
+2025-12-06 17:41:44,122 - INFO -   Precision: 0.9984
+2025-12-06 17:41:44,122 - INFO -   Recall: 1.0000
+2025-12-06 17:41:44,125 - INFO -   F1-Score: 0.9992
+2025-12-06 17:41:44,125 - INFO -   ROC-AUC: 0.9999
+2025-12-06 17:41:44,131 - INFO - Training pure federated learning...
+2025-12-06 17:41:44,131 - INFO - Training pure federated learning model...
+2025-12-06 17:41:44,267 - INFO - Pure FL Round 1/10
+2025-12-06 17:41:54,325 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:42:03,744 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:42:12,244 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:42:21,930 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:42:31,504 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:42:31,624 - INFO - Pure FL Round 1 Evaluation:
+2025-12-06 17:42:31,624 - INFO -   Accuracy: 0.7103
+2025-12-06 17:42:31,624 - INFO -   Precision: 0.6431
+2025-12-06 17:42:31,626 - INFO -   Recall: 0.9451
+2025-12-06 17:42:31,626 - INFO -   F1-Score: 0.7654
+2025-12-06 17:42:31,627 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:42:31,627 - INFO - Pure FL Round 2/10
+2025-12-06 17:42:39,835 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:42:49,726 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:43:01,592 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:43:13,337 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:43:24,266 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:43:24,364 - INFO - Pure FL Round 2 Evaluation:
+2025-12-06 17:43:24,364 - INFO -   Accuracy: 0.7103
+2025-12-06 17:43:24,364 - INFO -   Precision: 0.6431
+2025-12-06 17:43:24,364 - INFO -   Recall: 0.9451
+2025-12-06 17:43:24,364 - INFO -   F1-Score: 0.7654
+2025-12-06 17:43:24,364 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:43:24,364 - INFO - Pure FL Round 3/10
+2025-12-06 17:43:35,328 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:43:45,945 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:43:56,509 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:44:07,515 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:44:17,761 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:44:17,865 - INFO - Pure FL Round 3 Evaluation:
+2025-12-06 17:44:17,866 - INFO -   Accuracy: 0.7103
+2025-12-06 17:44:17,867 - INFO -   Precision: 0.6431
+2025-12-06 17:44:17,867 - INFO -   Recall: 0.9451
+2025-12-06 17:44:17,868 - INFO -   F1-Score: 0.7654
+2025-12-06 17:44:17,868 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:44:17,868 - INFO - Pure FL Round 4/10
+2025-12-06 17:44:28,121 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:44:38,605 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:44:49,589 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:45:00,623 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:45:11,819 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:45:11,914 - INFO - Pure FL Round 4 Evaluation:
+2025-12-06 17:45:11,914 - INFO -   Accuracy: 0.7103
+2025-12-06 17:45:11,922 - INFO -   Precision: 0.6431
+2025-12-06 17:45:11,923 - INFO -   Recall: 0.9451
+2025-12-06 17:45:11,923 - INFO -   F1-Score: 0.7654
+2025-12-06 17:45:11,923 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:45:11,923 - INFO - Pure FL Round 5/10
+2025-12-06 17:45:22,551 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:45:32,119 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:45:43,421 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:45:54,626 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:46:06,398 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:46:06,490 - INFO - Pure FL Round 5 Evaluation:
+2025-12-06 17:46:06,494 - INFO -   Accuracy: 0.7103
+2025-12-06 17:46:06,494 - INFO -   Precision: 0.6431
+2025-12-06 17:46:06,494 - INFO -   Recall: 0.9451
+2025-12-06 17:46:06,494 - INFO -   F1-Score: 0.7654
+2025-12-06 17:46:06,494 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:46:06,496 - INFO - Pure FL Round 6/10
+2025-12-06 17:46:15,828 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:46:24,382 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:46:32,101 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:46:43,260 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:46:55,279 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:46:55,380 - INFO - Pure FL Round 6 Evaluation:
+2025-12-06 17:46:55,381 - INFO -   Accuracy: 0.7103
+2025-12-06 17:46:55,381 - INFO -   Precision: 0.6431
+2025-12-06 17:46:55,381 - INFO -   Recall: 0.9451
+2025-12-06 17:46:55,383 - INFO -   F1-Score: 0.7654
+2025-12-06 17:46:55,383 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:46:55,383 - INFO - Pure FL Round 7/10
+2025-12-06 17:47:05,412 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:47:16,632 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:47:27,080 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:47:38,458 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:47:47,597 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:47:47,682 - INFO - Pure FL Round 7 Evaluation:
+2025-12-06 17:47:47,684 - INFO -   Accuracy: 0.7103
+2025-12-06 17:47:47,684 - INFO -   Precision: 0.6431
+2025-12-06 17:47:47,684 - INFO -   Recall: 0.9451
+2025-12-06 17:47:47,684 - INFO -   F1-Score: 0.7654
+2025-12-06 17:47:47,684 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:47:47,684 - INFO - Pure FL Round 8/10
+2025-12-06 17:47:57,100 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:48:04,582 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:48:14,004 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:48:22,183 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:48:29,012 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:48:29,107 - INFO - Pure FL Round 8 Evaluation:
+2025-12-06 17:48:29,107 - INFO -   Accuracy: 0.7103
+2025-12-06 17:48:29,107 - INFO -   Precision: 0.6431
+2025-12-06 17:48:29,107 - INFO -   Recall: 0.9451
+2025-12-06 17:48:29,107 - INFO -   F1-Score: 0.7654
+2025-12-06 17:48:29,107 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:48:29,107 - INFO - Pure FL Round 9/10
+2025-12-06 17:48:39,061 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:48:49,343 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:48:59,995 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:49:11,244 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:49:24,218 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:49:24,348 - INFO - Pure FL Round 9 Evaluation:
+2025-12-06 17:49:24,348 - INFO -   Accuracy: 0.7103
+2025-12-06 17:49:24,348 - INFO -   Precision: 0.6431
+2025-12-06 17:49:24,348 - INFO -   Recall: 0.9451
+2025-12-06 17:49:24,348 - INFO -   F1-Score: 0.7654
+2025-12-06 17:49:24,348 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:49:24,348 - INFO - Pure FL Round 10/10
+2025-12-06 17:49:36,340 - INFO -   merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:49:46,036 - INFO -   merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:49:57,671 - INFO -   merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:50:09,480 - INFO -   merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:50:20,969 - INFO -   merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:50:21,067 - INFO - Pure FL Round 10 Evaluation:
+2025-12-06 17:50:21,067 - INFO -   Accuracy: 0.7103
+2025-12-06 17:50:21,067 - INFO -   Precision: 0.6431
+2025-12-06 17:50:21,067 - INFO -   Recall: 0.9451
+2025-12-06 17:50:21,067 - INFO -   F1-Score: 0.7654
+2025-12-06 17:50:21,069 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:50:21,069 - INFO - Training hierarchical federated learning...
+2025-12-06 17:50:21,069 - INFO - Training hierarchical federated learning model...
+2025-12-06 17:50:21,144 - INFO - Hierarchical FL Round 1/10
+2025-12-06 17:50:21,144 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:50:32,635 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:50:43,529 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:50:54,962 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:50:54,962 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:50:54,965 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:50:54,965 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:51:06,914 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:51:19,139 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:51:19,140 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:51:19,141 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:51:19,141 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:51:19,141 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:51:19,241 - INFO - Hierarchical FL Round 1 Evaluation:
+2025-12-06 17:51:19,241 - INFO -   Accuracy: 0.7103
+2025-12-06 17:51:19,241 - INFO -   Precision: 0.6431
+2025-12-06 17:51:19,241 - INFO -   Recall: 0.9451
+2025-12-06 17:51:19,241 - INFO -   F1-Score: 0.7654
+2025-12-06 17:51:19,241 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:51:19,241 - INFO - Hierarchical FL Round 2/10
+2025-12-06 17:51:19,246 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:51:31,661 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:51:43,492 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:51:54,533 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:51:54,533 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:51:54,533 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:51:54,533 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:52:06,414 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:52:18,109 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:52:18,109 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:52:18,112 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:52:18,112 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:52:18,112 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:52:18,209 - INFO - Hierarchical FL Round 2 Evaluation:
+2025-12-06 17:52:18,209 - INFO -   Accuracy: 0.7103
+2025-12-06 17:52:18,209 - INFO -   Precision: 0.6431
+2025-12-06 17:52:18,209 - INFO -   Recall: 0.9451
+2025-12-06 17:52:18,209 - INFO -   F1-Score: 0.7654
+2025-12-06 17:52:18,209 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:52:18,209 - INFO - Hierarchical FL Round 3/10
+2025-12-06 17:52:18,209 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:52:29,001 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:52:39,249 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:52:50,283 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:52:50,283 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:52:50,283 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:52:50,283 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:53:01,427 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:53:13,040 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:53:13,044 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:53:13,044 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:53:13,044 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:53:13,044 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:53:13,140 - INFO - Hierarchical FL Round 3 Evaluation:
+2025-12-06 17:53:13,140 - INFO -   Accuracy: 0.7103
+2025-12-06 17:53:13,140 - INFO -   Precision: 0.6431
+2025-12-06 17:53:13,144 - INFO -   Recall: 0.9451
+2025-12-06 17:53:13,144 - INFO -   F1-Score: 0.7654
+2025-12-06 17:53:13,144 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:53:13,144 - INFO - Hierarchical FL Round 4/10
+2025-12-06 17:53:13,144 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:53:24,275 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:53:35,723 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:53:46,089 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:53:46,089 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:53:46,089 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:53:46,092 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:53:53,079 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:54:04,874 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:54:04,874 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:54:04,875 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:54:04,876 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:54:04,877 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:54:04,968 - INFO - Hierarchical FL Round 4 Evaluation:
+2025-12-06 17:54:04,975 - INFO -   Accuracy: 0.7103
+2025-12-06 17:54:04,975 - INFO -   Precision: 0.6431
+2025-12-06 17:54:04,975 - INFO -   Recall: 0.9451
+2025-12-06 17:54:04,975 - INFO -   F1-Score: 0.7654
+2025-12-06 17:54:04,975 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:54:04,975 - INFO - Hierarchical FL Round 5/10
+2025-12-06 17:54:04,975 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:54:17,117 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:54:28,393 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:54:40,525 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:54:40,525 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:54:40,528 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:54:40,530 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:54:52,171 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:55:03,590 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:55:03,591 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:55:03,591 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:55:03,593 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:55:03,593 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:55:03,684 - INFO - Hierarchical FL Round 5 Evaluation:
+2025-12-06 17:55:03,684 - INFO -   Accuracy: 0.7103
+2025-12-06 17:55:03,685 - INFO -   Precision: 0.6431
+2025-12-06 17:55:03,685 - INFO -   Recall: 0.9451
+2025-12-06 17:55:03,685 - INFO -   F1-Score: 0.7654
+2025-12-06 17:55:03,686 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:55:03,686 - INFO - Hierarchical FL Round 6/10
+2025-12-06 17:55:03,686 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:55:15,094 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:55:26,270 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:55:37,586 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:55:37,586 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:55:37,588 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:55:37,588 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:55:46,873 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:55:57,819 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:55:57,819 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:55:57,819 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:55:57,819 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:55:57,819 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:55:57,903 - INFO - Hierarchical FL Round 6 Evaluation:
+2025-12-06 17:55:57,903 - INFO -   Accuracy: 0.7103
+2025-12-06 17:55:57,903 - INFO -   Precision: 0.6431
+2025-12-06 17:55:57,903 - INFO -   Recall: 0.9451
+2025-12-06 17:55:57,903 - INFO -   F1-Score: 0.7654
+2025-12-06 17:55:57,903 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:55:57,916 - INFO - Hierarchical FL Round 7/10
+2025-12-06 17:55:57,916 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:56:07,280 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:56:17,304 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:56:27,727 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:56:27,727 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:56:27,727 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:56:27,729 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:56:38,146 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:56:48,637 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:56:48,637 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:56:48,637 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:56:48,637 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:56:48,637 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:56:48,731 - INFO - Hierarchical FL Round 7 Evaluation:
+2025-12-06 17:56:48,731 - INFO -   Accuracy: 0.7103
+2025-12-06 17:56:48,731 - INFO -   Precision: 0.6431
+2025-12-06 17:56:48,731 - INFO -   Recall: 0.9451
+2025-12-06 17:56:48,731 - INFO -   F1-Score: 0.7654
+2025-12-06 17:56:48,731 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:56:48,731 - INFO - Hierarchical FL Round 8/10
+2025-12-06 17:56:48,731 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:56:58,989 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:57:08,549 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:57:18,994 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:57:18,994 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:57:18,994 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:57:18,994 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:57:29,228 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:57:40,348 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:57:40,348 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:57:40,348 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:57:40,348 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:57:40,348 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:57:40,422 - INFO - Hierarchical FL Round 8 Evaluation:
+2025-12-06 17:57:40,422 - INFO -   Accuracy: 0.7103
+2025-12-06 17:57:40,422 - INFO -   Precision: 0.6431
+2025-12-06 17:57:40,422 - INFO -   Recall: 0.9451
+2025-12-06 17:57:40,422 - INFO -   F1-Score: 0.7654
+2025-12-06 17:57:40,422 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:57:40,422 - INFO - Hierarchical FL Round 9/10
+2025-12-06 17:57:40,422 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:57:51,062 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:58:01,923 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:58:12,721 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:58:12,721 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:58:12,721 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:58:12,721 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:58:24,319 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:58:35,789 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:58:35,793 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:58:35,793 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:58:35,794 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:58:35,795 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:58:35,890 - INFO - Hierarchical FL Round 9 Evaluation:
+2025-12-06 17:58:35,890 - INFO -   Accuracy: 0.7103
+2025-12-06 17:58:35,890 - INFO -   Precision: 0.6431
+2025-12-06 17:58:35,892 - INFO -   Recall: 0.9451
+2025-12-06 17:58:35,892 - INFO -   F1-Score: 0.7654
+2025-12-06 17:58:35,892 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:58:35,892 - INFO - Hierarchical FL Round 10/10
+2025-12-06 17:58:35,892 - INFO -   Processing edge_1 with merchants [1, 2, 3]
+2025-12-06 17:58:46,960 - INFO -     merchant_1: 12780 samples, loss: 0.0003
+2025-12-06 17:58:56,799 - INFO -     merchant_2: 12780 samples, loss: 0.0003
+2025-12-06 17:59:07,731 - INFO -     merchant_3: 12780 samples, loss: 0.0002
+2025-12-06 17:59:07,731 - INFO - Aggregating 3 models at edge node
+2025-12-06 17:59:07,731 - INFO -     edge_1 aggregated 3 models (38340 total samples)
+2025-12-06 17:59:07,731 - INFO -   Processing edge_2 with merchants [4, 5]
+2025-12-06 17:59:18,724 - INFO -     merchant_4: 12780 samples, loss: 0.0003
+2025-12-06 17:59:29,843 - INFO -     merchant_5: 12782 samples, loss: 0.0003
+2025-12-06 17:59:29,843 - INFO - Aggregating 2 models at edge node
+2025-12-06 17:59:29,843 - INFO -     edge_2 aggregated 2 models (25562 total samples)
+2025-12-06 17:59:29,843 - INFO - Aggregating 2 edge models at central server
+2025-12-06 17:59:29,843 - INFO -   Central server aggregated 2 edge nodes
+2025-12-06 17:59:29,936 - INFO - Hierarchical FL Round 10 Evaluation:
+2025-12-06 17:59:29,936 - INFO -   Accuracy: 0.7103
+2025-12-06 17:59:29,938 - INFO -   Precision: 0.6431
+2025-12-06 17:59:29,938 - INFO -   Recall: 0.9451
+2025-12-06 17:59:29,939 - INFO -   F1-Score: 0.7654
+2025-12-06 17:59:29,939 - INFO -   ROC-AUC: 0.8465
+2025-12-06 17:59:29,939 - INFO - Generating performance comparison...
+2025-12-06 17:59:29,941 - INFO - Plotting training curves...
+2025-12-06 18:06:01,569 - INFO - Saving models...
+2025-12-06 18:06:01,584 - INFO - Saved centralized model to d:/PracticeProject/fraud_detection_project\trained_models\centralized_model.pkl
+2025-12-06 18:06:01,596 - INFO - Saved pure_fl model to d:/PracticeProject/fraud_detection_project\trained_models\pure_fl_model.pkl
+2025-12-06 18:06:01,606 - INFO - Saved hierarchical_fl model to d:/PracticeProject/fraud_detection_project\trained_models\hierarchical_fl_model.pkl
+2025-12-06 18:06:01,615 - INFO - Experiment completed successfully! Results saved to d:/PracticeProject/fraud_detection_project\experiment_results_adasyn_mlp.json
